@@ -1,11 +1,12 @@
 """
+Amanda Hanway - Streaming Data, Module 3
+1/21/23
 
-Always customize this docstring. 
+This program listens for messages on the queue. This process runs continously. 
 
-Add your name, date, and a description of the program.
+Author: Denise Case
+Date: January 21, 2023
 
-Listens for messages on the queue.
-This process runs continously. 
 
 Approach
 ---------
@@ -89,6 +90,6 @@ def main(hn: str = "localhost"):
 # without executing the code below.
 # If this is the program being run, then execute the code below
 if __name__ == "__main__":
-    main("localhostttt")
+    main("localhost")
   
      

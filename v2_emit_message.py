@@ -1,4 +1,7 @@
 """
+    Amanda Hanway - Streaming Data, Module 3
+    1/21/23
+
     This program sends a message to a queue on the RabbitMQ server.
 
     Author: Denise Case
@@ -44,4 +47,5 @@ def send_message(host: str, queue_name: str, message: str):
 # without executing the code below.
 # If this is the program being run, then execute the code below
 if __name__ == "__main__":
-    send_message("llllocalhost","hello","Hello World!")
+    msg = 'Hello again and again v2'
+    send_message("localhost","hello",msg)

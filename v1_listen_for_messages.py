@@ -1,11 +1,11 @@
 """
+Amanda Hanway - Streaming Data, Module 3
+1/21/23
 
-Always customize this docstring. 
+This program listens for messages on the queue. This process runs continously. 
 
-Add your name, date, and a description of the program.
-
-Listens for messages on the queue.
-This process runs continously. 
+Author: Denise Case
+Date: January 14, 2023
 
 Approach
 ---------
@@ -34,7 +34,7 @@ import pika, sys, os
 # define a main function to run the program
 def main():
     # create a blocking connection to the RabbitMQ server
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host='LocalHostt'))
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
     # use the connection to create a communication channel
     channel = connection.channel()
     # use the channel to declare a queue

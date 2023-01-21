@@ -1,6 +1,14 @@
+# Amanda Hanway - Streaming Data, Module 3
+
 # streaming-03-rabbitmq
 
 Get started with RabbitMQ, a message broker, that enables multiple processes to communicate reliably through an intermediary
+
+## Setup Notes:
+- Review this page related to installing RabbitMQ server: https://community.chocolatey.org/packages/rabbitmq
+    - Open command prompt as administrator to run: choco install rabbitmq
+- Review this page related to using multiple terminals: https://nwmissouri.instructure.com/courses/51016/pages/multiple-terminals
+- Install the  pika python client:  conda install -c conda-forge pika
 
 ## Before You Begin
 
@@ -77,15 +85,24 @@ Each of the version 2 programs include an error as well.
 1. Include your name and the date.
 1. Imports always go at the top, just after the file docstring.
 1. Imports should be one per line - why?
+    - Adding multiple in one line is not recommended for readability
 1. Then, define your functions.
 1. Functions are reuable logic blocks.
 1. Everything the function needs comes in through the arguments.
 1. A function may - or may not - return a value. 
 1. When we open a connection, we should close the connection. 
 1. Which of the 4 files will always close() the connection?
+    - v1_emit_message - the script ends with conn.close()
 1. Search GitHub for if __name__ == "__main__":
 1. How many hits did you get? 
+    - 40M
 1. Learn and understand this common Python idiom.
+    - __name__ == "__main__" is a 
+    - Standard Python idiom to indicate main program entry point
+    - This allows us to import this module and use its functions
+    - without executing the code below.
+    - If this is the program being run, then execute the code below
+    - In Short: It Allows You to Execute Code When the File Runs as a Script, but Not When It’s Imported as a Module
 
 ## Reference
 
@@ -95,3 +112,7 @@ Each of the version 2 programs include an error as well.
 ## Multiple Terminals
 
 ![Mac Example](screenshot.png)
+
+## Screenshot Using Multiple Terminals
+- using VS Code (listening) and Command Prompt (emitting)
+![Using Multiple Terminals](Terminals_emitting_listening.png)
