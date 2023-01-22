@@ -115,4 +115,5 @@ Each of the version 2 programs include an error as well.
 
 ## Screenshot Using Multiple Terminals
 - using VS Code (listening) and Command Prompt (emitting)
+
 ![Using Multiple Terminals](Terminals_emitting_listening.png)
